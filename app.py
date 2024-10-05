@@ -35,7 +35,3 @@ async def answer_question(question: str = Form(...)):
         return JSONResponse(content={"answer": answer})
     except ValueError as e:
         return JSONResponse(content={"error": str(e)}, status_code=400)
-
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run(app)
