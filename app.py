@@ -2,7 +2,7 @@ from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse
 
-from service.question_answer_service import QuestionAnswerService
+from question_answer_service import QuestionAnswerService
 
 app = FastAPI(title="CUSTOM QA BOT", version="1.0")
 
